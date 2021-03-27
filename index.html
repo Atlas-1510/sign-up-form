@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Form Practice</title>
+  </head>
+  <body>
+    <div id="formContainer">
+      <form id="form">
+        <h1>Sign Up With Email</h1>
+        <label for="email"></label>
+        <input
+          id="email"
+          type="email"
+          name="user"
+          autocomplete="off"
+          placeholder="Email"
+        />
+        <div class="subtext"></div>
+        <label for="password"></label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autocomplete="new-password"
+          placeholder="Password"
+          minlength="8"
+          maxlength="64"
+          spellcheck="false"
+        />
+        <div class="subtext"></div>
+        <label for="confirm-password"></label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm-password"
+          autocomplete="new-password"
+          placeholder="Confirm password"
+          minlength="8"
+          maxlength="64"
+          spellcheck="false"
+        />
+        <div class="subtext"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
